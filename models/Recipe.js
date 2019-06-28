@@ -5,9 +5,9 @@ const { Schema } = mongoose;
 const recipeSchema = new Schema({
 	// TODO: write the schema
 	title: {
-		title: String,
-		// required: true,
-		// unique: true
+		type: String,
+		required: true,
+		unique: true
 	},
 	level: {
 		type: String,

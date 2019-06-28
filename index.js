@@ -40,7 +40,7 @@ Recipe.create({
 // console.log(Recipe.title);
 Recipe.insertMany(data);
 
-Recipe.findOneAndUpdate({ creator: "Chef Luigi" }, { duration: 100 })
+Recipe.findOneAndUpdate({ title: "Rigatoni alla Genovese" }, { duration: 100 })
 	.then(data => {
 		console.log(data);
 	})
@@ -48,7 +48,7 @@ Recipe.findOneAndUpdate({ creator: "Chef Luigi" }, { duration: 100 })
 		console.log(err);
 	});
 
-Recipe.findOneAndDelete({ creator: "Chef Nadia" })
+Recipe.findOneAndDelete({ title: "Carrot Cake" })
 	.then(data => {
 		console.log(data);
 	})
