@@ -36,3 +36,6 @@ Recipe.create({
 	duration: 40,
 	creator: "Chef LePapu"
 });
+
+console.log(Recipe.title);
+Recipe.insertMany(data);

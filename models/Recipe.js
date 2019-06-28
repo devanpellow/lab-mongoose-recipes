@@ -5,7 +5,7 @@ const { Schema } = mongoose;
 const recipeSchema = new Schema({
 	// TODO: write the schema
 	title: {
-		title: String,
+		title: String
 		// required: true,
 		// unique: true
 	},
@@ -17,7 +17,7 @@ const recipeSchema = new Schema({
 	cuisine: String,
 	dishType: {
 		type: String,
-		enum: ["Breakfast", "Dish", "Snack", "Desseret", "Other"]
+		enum: ["Breakfast", "Dish", "Snack", "Dessert", "Other"]
 	},
 	image: {
 		type: String,
