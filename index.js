@@ -37,5 +37,21 @@ Recipe.create({
 	creator: "Chef LePapu"
 });
 
-console.log(Recipe.title);
+// console.log(Recipe.title);
 Recipe.insertMany(data);
+
+Recipe.findOneAndUpdate({ creator: "Chef Luigi" }, { duration: 100 })
+	.then(data => {
+		console.log(data);
+	})
+	.catch(err => {
+		console.log(err);
+	});
+
+Recipe.findOneAndDelete({ creator: "Chef Nadia" })
+	.then(data => {
+		console.log(data);
+	})
+	.catch(err => {
+		console.log(err);
+	});
